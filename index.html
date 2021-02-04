@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Puzzle</title>
+    <script src="js/actions.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="body" onload="revolver()"  >
+<div class="principal">
+    <div id="slidingpuzzleContainer" class="table"  >
+            <div id="fila1" class="tabla">
+                <div id="celda11" onclick="select(1,1);win()" class="section11" ></div>
+                <div id="celda12" onclick="select(1,2);win()" class="section12" ></div>
+                <div id="celda13" onclick="select(1,3);win()" class="section13" ></div>
+            </div> 
+            <div id="fila2" class="tabla">
+                <div id="celda21" onclick="select(2,1);win()" class="section21" ></div>
+                <div id="celda22" onclick="select(2,2);win()" class="section22" ></div>
+                <div id="celda23" onclick="select(2,3);win()" class="section23" ></div>
+            </div>
+            <div id="fila3" class="tabla" >
+                <div id="celda31" onclick="select(3,1);win()" class="section31" ></div>
+                <div id="celda32" onclick="select(3,2);win()" class="section32" ></div>
+                <div id="celda33" onclick="select(3,3);win()" class="section33" ></div>
+            </div>
+    </div>
+    <div class="table2" > 
+            <div><img src="img/paisaje.jpg" alt=""> </div>
+    </div>
+</div>
+<div id="contadores" class="contenedor"></div> 
+</body>
+</html>

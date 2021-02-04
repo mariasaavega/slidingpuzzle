@@ -1,0 +1,70 @@
+
+
+
+.section11, .section12, .section13, .section21, .section22, .section23, .section31, .section32, .section33{
+  display: table-cell;
+  width: 170px;
+  height: 170px;
+  border: 1px solid white;
+  background: url(../img/paisaje.jpg); 
+  cursor: pointer;
+}
+.section11 {background-position: left top;}
+.section12 {background-position: center top;}
+.section13 {background-position: right top;}
+.section21 {background-position: left center;}
+.section22 {background-position: center center;}
+.section23 {background-position: right center;}
+.section31 {background-position: left bottom;}
+.section32 {background-position: center bottom;}
+.section33 {background: white; cursor: default;}
+
+.tabla{
+    display: flex;
+
+}
+
+.table{
+    display: grid;
+    justify-content: space-evenly;
+    float: left;
+}
+
+.table2{
+    display: grid;
+    justify-content: space-evenly;
+    float: left;
+}
+
+.principal{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+.contenedor{
+    position: relative;
+    margin: 20px 0 0 40%;
+    font-size: 50px;
+    background: #ac83ce;
+    display: flex;
+    width: 20%; 
+    height: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+
+}
+/* 
+@media screen and (max-width:900px){
+
+    .section1, .section2, .section3, .section4, .section5, .section6, .section7, .section8, .section9{
+        display: table-cell;
+        width: 170px;
+        height: 170px;
+        border: 1px solid white;
+        background: url(../img/paisaje.jpg); 
+        cursor: pointer;
+      }
+} */
