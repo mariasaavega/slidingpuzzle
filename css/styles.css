@@ -1,23 +1,100 @@
 
+.body{
+    background-color: #c8bcb1  ;
+}
+.overlay{
+    background: rgb(0, 0, 0,.5);
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     visibility: hidden; 
+
+}
+
+.overlay.active{
+    visibility: visible;
+}
+
+.popup{
+
+    background: #f8f8f8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .3);
+    font-family: 'Sora', sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.btn-cerrar{
+
+    font-size:25px ;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: #bbbbbb;
+    transition: .3s ease all;
+ 
+
+}
+
+.btn-cerrar:hover{
+    color: #000;
+}
+
+.popup h3{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    /* opacity: 0; */
+}
+
+.popup .btn-cerrar2{
+    padding: 0 20px;
+    height: 60px;
+    width: 200px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: #f3b6b6;
+    border-radius: 3px;
+    font-family: 'Sora', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.popup .btn-cerrar2:hover{
+    background: rgba(231, 131, 214, 0.5);
+
+}
+
+
 
 
 .section11, .section12, .section13, .section21, .section22, .section23, .section31, .section32, .section33{
   display: table-cell;
-  width: 170px;
-  height: 170px;
+  width: 190px;
+  height: 190px;
   border: 1px solid white;
-  background: url(../img/paisaje.jpg); 
+  background: url(../img/koala.jpg); 
   cursor: pointer;
 }
-.section11 {background-position: left top;}
-.section12 {background-position: center top;}
-.section13 {background-position: right top;}
-.section21 {background-position: left center;}
-.section22 {background-position: center center;}
-.section23 {background-position: right center;}
-.section31 {background-position: left bottom;}
-.section32 {background-position: center bottom;}
-.section33 {background: white; cursor: default;}
+.section11 {background-position: left top;     border-radius: 10px;}
+.section12 {background-position: center top;    border-radius: 10px;}
+.section13 {background-position: right top;    border-radius: 10px;}
+.section21 {background-position: left center;border-radius: 10px;}
+.section22 {background-position: center center;border-radius: 10px;}
+.section23 {background-position: right center;border-radius: 10px;}
+.section31 {background-position: left bottom;border-radius: 10px;}
+.section32 {background-position: center bottom;border-radius: 10px;}
+.section33 {background: rgb(143, 137, 137); cursor: default;border-radius: 10px;}
 
 .tabla{
     display: flex;
@@ -27,44 +104,43 @@
 .table{
     display: grid;
     justify-content: space-evenly;
-    float: left;
+     float: left; 
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 #b4d7fe;
 }
 
 .table2{
     display: grid;
     justify-content: space-evenly;
     float: left;
-}
 
+    
+
+}
+.img{
+    border-radius: 10px;
+    height: 580px;
+    width: 580px;
+
+}
 .principal{
     display: flex;
     justify-content: space-evenly;
     margin-top: 60px;
+    
 }
 
 .contenedor{
     position: relative;
     margin: 20px 0 0 40%;
     font-size: 50px;
-    background: #ac83ce;
+    background: #f3b6b6;
     display: flex;
     width: 20%; 
     height: 100px;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 5px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 6px 0 rgba(147, 48, 185, 0.6);
 
 }
-/* 
-@media screen and (max-width:900px){
-
-    .section1, .section2, .section3, .section4, .section5, .section6, .section7, .section8, .section9{
-        display: table-cell;
-        width: 170px;
-        height: 170px;
-        border: 1px solid white;
-        background: url(../img/paisaje.jpg); 
-        cursor: pointer;
-      }
-} */

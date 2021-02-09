@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slide Puzzle</title>
     <script src="js/actions.js"></script>
+    <script src="https://kit.fontawesome.com/51094502f7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap" rel="stylesheet">
 </head>
-<body id="body" onload="revolver()"  >
-<div class="principal">
-    <div id="slidingpuzzleContainer" class="table"  >
+<body id="body" onload="revolver()" class="body" >
+    <div class="principal">
+         <div id="slidingpuzzleContainer" class="table"  >
             <div id="fila1" class="tabla">
                 <div id="celda11" onclick="select(1,1);win()" class="section11" ></div>
                 <div id="celda12" onclick="select(1,2);win()" class="section12" ></div>
@@ -26,10 +29,17 @@
                 <div id="celda33" onclick="select(3,3);win()" class="section33" ></div>
             </div>
     </div>
-    <div class="table2" > 
-            <div><img src="img/paisaje.jpg" alt=""> </div>
+    <div class="table2" onclick="abrir()"> 
+            <div><img src="img/koala.jpg" alt="" class="img"> </div>
     </div>
 </div>
 <div id="contadores" class="contenedor"></div> 
+<div id="overlay" class="overlay">
+    <div class="popup">
+        <a href="#" id="btn-cerrar" class="btn-cerrar" onclick="cerrar()"><i class="fa fa-times"></i></a>
+        <h3>HAS GANADO!!</h3>
+        <button id="btn-cerrar2" class="btn-cerrar2" onclick="cerrar()"> OKAY</button>
+    </div>
+</div>
 </body>
 </html>

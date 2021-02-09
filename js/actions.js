@@ -68,6 +68,14 @@ const select=(row,column)=> {
         
   }
 
+  const abrir = () =>{
+    document.getElementById('overlay').classList.add("active");
+    
+    
+    
+    
+  }
+
 
 
 const win = ()=>{
@@ -100,10 +108,17 @@ const win = ()=>{
 console.log("PASO = "+contar)
 
 if(contar==9){
-    setTimeout(()=> {alert("GANASTE")},0)
+    setTimeout(()=> {abrir()},0)
    
     
 }
+}
+
+const cerrar = () =>{
+
+  document.getElementById('overlay').classList.remove("active");
 
 
 }
+
+
